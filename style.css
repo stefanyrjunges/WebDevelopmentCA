@@ -10,7 +10,7 @@ font-family: 'PT Serif', serif; */
 /* keep the design consistent across browsers */ 
     
     body {
-        background-image: url(images/background4.jpg);
+        background-image: url(background4.jpg);
         background-attachment: fixed;
         background-size: cover;
     }
