@@ -1,62 +1,4 @@
-// get the header section and apply a margin top every time the Nav button is clicked. That way they do not overlap each other.
-function spaceButton() {
-    var header = document.getElementsByClassName("header")[0];
-    var isMarginTopSet = false
-
-    document.getElementById("buttonNav").addEventListener('click', function(){ // addEventListener to watch whenever the button is clicked
-        
-        if(isMarginTopSet == true){ 
-            header.style.marginTop = "40px" // if button was not clicked. set margin to 40px
-        } else {
-            header.style.marginTop = "200px" // if button was clicked. set margin to 200px
-        }
-
-        isMarginTopSet = !isMarginTopSet;
-    })
-}
-
-spaceButton() // starts the function
-
-
-function startGame(){ // function to change what is being displayed when the button to start the quiz is clicked.
-    var quiz = document.getElementsByClassName("questions")[0];
-    var introduction = document.getElementsByClassName("gameStart")[0];
-
-    introduction.style.display = "none"; // display the introduction as display:none
-    quiz.style.display = "grid"; // change the display of the quizz from none to grid.
-    result.innerHTML = ""; // Reset the result message
-    tryAgain.style.display = "none"; // Hide the tryAgain button
-}
-
-function clickSubmit(){ // function to process the questions and answers of the quizz
-    var quiz = document.getElementsByClassName("questions")[0]; // getting the first element from the class questions.
-    var result = document.getElementById("result")
-    var tryAgainButton = document.getElementById("tryAgain");
-    
-    var score = 0 // set a score
-    
-    var answers = ["tree","rose","amazon","liffey","africa","america","sheep","honey","autumn","apple"] // answers for each question
-
-    for(index = 0; index < 10 ; index++){ // loop to go through each question and match the answers
-        var userAnswer = document.getElementById("question" + (index + 1)).value.toLowerCase(); //getting the value from the input, passing what the user has typed to low case
-        if (userAnswer == answers[index]) { // checking if the answers are right or not.
-            score++; // if the answer is right, add 1 point to the score.
-        } 
-    }
-    
-    quiz.style.display = "none"
-
-    if(score == 10){
-        result.innerHTML = "you scored 100%, Congratulations!!! a tree will be planted in the amazon forest in a few days!."
-    }else {
-        result.innerHTML = "you got " + score + " right, unfortunately a tree won't be planted in the amazon forest."
-        tryAgainButton.style.display = "block" // if the user do not get all of the answers correct, a button to try again appears.
-
-    }
-
-}
-
-// Functions for the +MORE AND -LESS BUTTONS
+// Functions for the +MORE AND -LESS BUTTONS, DONATE PAGE
 
 var buttonBack = "more"; 
 
@@ -138,3 +80,62 @@ function verifyData() {
         alert("Please, correct information where needed");
       }    
   }
+
+
+// get the header section and apply a margin top every time the Nav button is clicked. That way they do not overlap each other.
+function spaceButton() {
+    var header = document.getElementsByClassName("header")[0];
+    var isMarginTopSet = false
+
+    document.getElementById("buttonNav").addEventListener('click', function(){ // addEventListener to watch whenever the button is clicked
+        
+        if(isMarginTopSet == true){ 
+            header.style.marginTop = "40px" // if button was not clicked. set margin to 40px
+        } else {
+            header.style.marginTop = "200px" // if button was clicked. set margin to 200px
+        }
+
+        isMarginTopSet = !isMarginTopSet;
+    })
+}
+
+spaceButton() // starts the function
+
+
+function startGame(){ // function to change what is being displayed when the button to start the quiz is clicked.
+    var quiz = document.getElementsByClassName("questions")[0];
+    var introduction = document.getElementsByClassName("gameStart")[0];
+
+    introduction.style.display = "none"; // display the introduction as display:none
+    quiz.style.display = "grid"; // change the display of the quizz from none to grid.
+    result.innerHTML = ""; // Reset the result message
+    tryAgain.style.display = "none"; // Hide the tryAgain button
+}
+
+function clickSubmit(){ // function to process the questions and answers of the quizz
+    var quiz = document.getElementsByClassName("questions")[0]; // getting the first element from the class questions.
+    var result = document.getElementById("result")
+    var tryAgainButton = document.getElementById("tryAgain");
+    
+    var score = 0 // set a score
+    
+    var answers = ["tree","rose","amazon","liffey","africa","america","sheep","honey","autumn","apple"] // answers for each question
+
+    for(index = 0; index < 10 ; index++){ // loop to go through each question and match the answers
+        var userAnswer = document.getElementById("question" + (index + 1)).value.toLowerCase(); //getting the value from the input, passing what the user has typed to low case
+        if (userAnswer == answers[index]) { // checking if the answers are right or not.
+            score++; // if the answer is right, add 1 point to the score.
+        } 
+    }
+    
+    quiz.style.display = "none"
+
+    if(score == 10){
+        result.innerHTML = "you scored 100%, Congratulations!!! a tree will be planted in the amazon forest in a few days!."
+    }else {
+        result.innerHTML = "you got " + score + " right, unfortunately a tree won't be planted in the amazon forest."
+        tryAgainButton.style.display = "block" // if the user do not get all of the answers correct, a button to try again appears.
+
+    }
+
+}
