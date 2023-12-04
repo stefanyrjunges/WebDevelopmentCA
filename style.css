@@ -299,13 +299,7 @@ b{
   text-align: center;
 }
 
-/* style for the h1 and h4 in the gallery */
-
-h1.gallery {font-family: 'Lora';
-  font-size: 40px;
-  text-align: center;
-  }
-
+/* style for h4 in the gallery */
   /* style for the texts below the images*/
   h4{
   font-family: 'Lora';
