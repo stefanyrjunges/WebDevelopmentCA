@@ -374,3 +374,16 @@ b{
      h1.aboutus {font-size: 28px;
 text-align: justify;}
 }
+
+/* making images from the text gallery responsive*/
+@media (max-width: 600px){
+  .img2{
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 400px){
+  .img2{
+    max-width: 60%;
+  }
+}
