@@ -315,6 +315,7 @@ b{
   width: 200px;
   border-radius: 5px;
   opacity: 1;
+grid-template-columns: auto-fit, minmax(200px, 1fr);
   }
 
   /* command to enlarge the images */
