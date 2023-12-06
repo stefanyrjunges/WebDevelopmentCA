@@ -312,7 +312,7 @@ b{
   display: block;
   margin: 0 auto;
   height: 200px;
-  width: 300px;
+  width: 400px;
   border-radius: 5px;
   opacity: 1;
 grid-template-columns: auto-fit, minmax(200px, 1fr);
