@@ -375,9 +375,7 @@ grid-template-columns: auto-fit, minmax(200px, 1fr);
      h1.aboutus {font-size: 28px;
 text-align: justify;}
 
-.img2{
-    max-width: 80%;
-  }
+.img2 {width:70%};
 }
 
 /* making images from the text gallery responsive*/
