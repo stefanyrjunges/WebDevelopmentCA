@@ -119,7 +119,7 @@ function clickSubmit(){ // function to process the questions and answers of the 
     
     var score = 0 // set a score
     
-    var answers = ["tree","rose","amazon","liffey","africa","america","sheep","honey","autumn","apple"] // answers for each question
+    var answers = ["tree","rose","amazon","liffey","africa","south america","sheep","honey","autumn","apple"] // answers for each question
 
     for(index = 0; index < 10 ; index++){ // loop to go through each question and match the answers
         var userAnswer = document.getElementById("question" + (index + 1)).value.toLowerCase(); //getting the value from the input, passing what the user has typed to low case
