@@ -1,4 +1,4 @@
-<h1>Sunstainability Website</h1>
+<h1>A sustainable website</h1>
 <p align="justify">
 This website was developed in collaboration with two classmates for our Final Project in our Web Design and Development class at National College of Ireland (NCI). The theme of the project was Sustainability,
 and the website adheres to various requirements, including user-friendliness, a gallery feature, responsiveness across different devices, image optimization,
